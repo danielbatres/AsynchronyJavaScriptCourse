@@ -21,7 +21,7 @@ const fetchData = (urlApi, callback) => {
 
 fetchData(`${API}/products`, (error1, data1) => {
     if (error1) return console.log(error1);
-    fetchData(`${API}/products/${data1}`, (error2, data2) => {
+    fetchData(`${API}/products/${data1[0].id}`, (error2, data2) => {
         if (error2) return console.log(error2);
         fetchData(`${API}/categories/${data2?.category?.id}`, (error3, data3) => {
             if (error3) return console.log(error3);
