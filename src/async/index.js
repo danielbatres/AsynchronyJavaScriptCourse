@@ -15,3 +15,5 @@ const anotherFunction = async () => {
 console.log("Before");
 anotherFunction();
 console.log("After");
+
+// funciones asíncronas
